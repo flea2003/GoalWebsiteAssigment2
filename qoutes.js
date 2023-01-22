@@ -1,6 +1,3 @@
-const button = document.getElementById("btn");
-button.addEventListener("click", addNewItem);
-      
 function addNewItem(evt) {
   let menu_item = document.getElementById("menu-item").value;
   let menu = document.getElementById("menu");
@@ -42,5 +39,25 @@ document.getElementById("lol").addEventListener("click", myFunction);
 
 myFunction();
 
+let buttonSignUp = document.getElementById("signup");
+buttonSignUp.addEventListener("click", functions);
 
+let numberofclicks = 0;
 
+document.addEventListener("click", functionaddclick);
+
+function functionaddclick(){
+  numberofclicks++;
+}
+
+function click(){
+  let li = document.createElement("li");
+  let text = document.createTextNode("Number of clicks: " + numberofclicks);
+  li.appendChild(text);
+  document.getElementById("bruceli").appendChild(li);
+}
+
+function functions(){
+  document.getElementById("ascuns").style.display = "block";
+  click();
+}
