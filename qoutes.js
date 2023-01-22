@@ -50,29 +50,47 @@ let buttonSignUp = document.getElementById("signup");
 buttonSignUp.addEventListener("click",functions);
 
 let numberofclicks = 0;
+let numberofkey = 0;
+
 
 document.addEventListener("click", functionaddclick);
+document.addEventListener("keypress", functionaddpress);
+
 
 function functionaddclick(){
   numberofclicks++;
 }
 
-function click(){
-  let li = document.createElement("li");
-  let text = document.createTextNode("Number of clicks: " + numberofclicks);
-  li.appendChild(text);
-  document.getElementById("bruceli").appendChild(li);
+function functionaddpress(){
+  numberofkey++;
 }
+
+
+function click(){
+  // let li = document.createElement("li");
+  // let text = document.createTextNode("Number of clicks: " + numberofclicks);
+  // li.appendChild(text);
+  // document.getElementById("bruceli").appendChild(li);
+  var text = document.getElementById("clicks");
+  text.innerHTML = "Number of clicks: " + numberofclicks;
+}
+
+function press(){
+  // li.appendChild(text);
+  // document.getElementById("bruceli").appendChild(li);
+  var text = document.getElementById("press");
+  text.innerHTML = "Number of key presses: " + numberofkey;
+}
+
 
 function timeSpent(timeStart){
   var end= new Date().getTime();
   var timp = new Date(end - timeStart);
   var m= timp.getMinutes();
   var s=timp.getSeconds();
-  let li = document.createElement("li");
-  let text = document.createTextNode("Time spent: "+m+" minutes and "+s+" seconds");
-  li.appendChild(text);
-  document.getElementById("bruceli").appendChild(li); 
+  var text=document.getElementById("time");
+  text.innerHTML="Time spent: "+m+" minutes and "+s+" seconds";
+  
 }
 
 
@@ -80,5 +98,7 @@ function functions(){
   document.getElementById("ascuns").style.display = "block";
   click();
   timeSpent(timeStart);
+  press();
+
 
 }

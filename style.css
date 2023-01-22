@@ -140,3 +140,14 @@ textarea{
 #ascuns{
     display: none;
 }
+
+
+#bruceli{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center; 
+    align-items:center;
+    flex-direction:column;
+}
