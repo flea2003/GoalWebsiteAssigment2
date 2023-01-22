@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="shortcut icon" type="image/x-icon" href="target-2070972_1280.png">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css_files\home_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <img src="css_files/unnamed.png" alt="" class="logo">
+        <ul>
+            <li><a href="home.html">My Goals</a></li>
+            <li><a href="goal-history.html">My History</a></li>
+        </ul>
+        <p>Click on the Profile Picture for more details</p>
+        <img class="profile-pic" src="css_files\A._Schwarzenegger.jpg" alt="profile_picture" height="60px" width="48px" onclick="toggleMenu()">
+    </nav>
+
+    <div class="menu-wrap" id="menu">
+        <div class="menu">
+            <div class="user-info">
+                <ul>
+                <li><a href="profile.html" class="sub-menu-link">
+                    <img src="1250689.png" alt="" width="15px" height="15px">
+                    <p>Profile</p>
+                    
+                </a></li>
+                <li><a href="index.html" class="sub-menu-link">
+                    <img src="3596149.png" alt="" width="15px" height="15">
+                    <p>Log Out</p>
+                </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <center>
+        <h1>My Goals</h1>
+    </center>
+
+    <div class="content">
+        <div class="content-inner">
+            <div class="goal-box">
+                <div class="info">
+                    <div class="goal-name">
+                        Call my grandparents
+                    </div>
+                    <div class="due-time">
+                        Till: Tomorrow
+                    </div>
+                </div>
+                <div class="description">
+                    <p class="desc-text">This is the description of the goal</p>
+                    <div class="target"><input type="checkbox" value="done" class="larger"></div>
+                </div>
+                <div class="options">
+                    <div class="option"><button>Modify</button></div>
+                    <div class="option"><button>Update</button></div>
+                    <div class="option"><button>Delete</button></div>
+                </div>
+        
+            </div>
+
+            <div class="goal-box">
+                <div class="info">
+                    <div class="goal-name">
+                        Drink 10 glasses of water
+                    </div>
+                    <div class="due-time">
+                        Till: Today
+                    </div>
+                </div>
+                <div class="description">
+                    <p class="desc-text">Drink more water in order to be well hydrated.</p>
+                    <div class="target">
+                        <button onclick="decrement()">-</button>  
+                        <h2 id="counting">5</h2>
+                        <button onclick="increment()">+</button> 
+                    </div>
+                </div>
+                <div class="options">
+                    <div class="option"><button>Modify</button></div>
+                    <div class="option"><button>Update</button></div>
+                    <div class="option"><button>Delete</button></div>
+                </div>
+        
+            </div>
+
+            <div class="goal-box">
+                <div class="info">
+                    <div class="goal-name">
+                        Save 300$ for the holiday trip
+                    </div>
+                    <div class="due-time">
+                        Till: March, 2023
+                    </div>
+                </div>
+                <div class="description">
+                    <p class="desc-text">
+                        <ul class="desc-list">
+                            <li>100$ for flight tickets</li>
+                            <li>150$ for hotel accommodation</li>
+                            <li>50$ for souvenirs</li>
+                        </ul>
+                    </p>
+                    <div class="slider">
+                        <input type="range" min="0" max="300" value="125" oninput="rangeValue.innerText = this.value">
+                        <p id="rangeValue">125</p>
+                    </div>
+                </div>
+                <div class="options">
+                    <div class="option"><button>Modify</button></div>
+                    <div class="option"><button>Update</button></div>
+                    <div class="option"><button>Delete</button></div>
+                </div>
+            
+            </div>
+
+            <div class="goal-box">
+                <div class="info">
+                    <div class="goal-name">
+                        Do 500 push-ups
+                    </div>
+                    <div class="due-time">
+                        Till: Sat 21, 2023 
+                    </div>
+                </div>
+                <div class="description">
+                    <p class="desc-text">Do 500 push-ups till saturday.</p>
+                    <div class="slider">
+                        <input type="range" min="0" max="500" value="268" oninput="rangeValue.innerText = this.value">
+                        <p id="rangeValue">268</p>
+                    </div>
+                </div>
+                <div class="options">
+                    <div class="option"><button>Modify</button></div>
+                    <div class="option"><button>Update</button></div>
+                    <div class="option"><button>Delete</button></div>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+
+    <a href="add-goal.html"><img id="add-button" src="css_files\plus-sign-icon-31.png" alt="" width="30px"></a>
+    
+    <script>
+        let menu = document.getElementById("menu");
+
+        function toggleMenu(){
+            menu.classList.toggle("open");
+        }
+
+        var data = 0;
+        function increment() {
+            data = data + 1;
+            document.getElementById("counting").innerText = data;}
+        function decrement() {
+            data = data -1;
+            document.getElementById("counting").innerText = data;
+        }
+
+    </script>
+
+    <div class="footer">
+        <p>&copy; Frija & Purice SRL.</p>
+    </div>
+
+    
+</body>
+</html>

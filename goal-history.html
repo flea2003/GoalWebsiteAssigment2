@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal History</title>
+    <link rel="stylesheet" href="css_files\home_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="css_files/unnamed.png" alt="" class="logo">
+        <ul>
+            <li><a href="home.html">My Goals</a></li>
+            <li><a href="goal-history.html">My History</a></li>
+        </ul>
+        <img class="profile-pic" src="css_files\A._Schwarzenegger.jpg" alt="profile_picture" height="60px" width="48px" onclick="toggleMenu()">
+    </nav>
+
+    <div class="menu-wrap" id="menu">
+        <div class="menu">
+            <div class="user-info">
+                <ul>
+                <li><a href="profile.html" class="sub-menu-link">
+                    <img src="1250689.png" alt="" width="15px" height="15px">
+                    <p>Profile</p>
+                    
+                </a></li>
+                <li><a href="index.html" class="sub-menu-link">
+                    <img src="3596149.png" alt="" width="15px" height="15">
+                    <p>Log Out</p>
+                </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <center>
+    <h1>My History</h1>
+    </center>
+
+    <div class="content">
+        <div class="content-inner">
+            <div class="goal-box">
+                <div class="info">
+                    <div class="goal-name">
+                        Send an email to the Head TA
+                    </div>
+                    <div class="due-time">
+                        Finished: Fri, 13 Jan
+                    </div>
+                </div>
+                <div class="description">
+                    <p class="desc-text">Send an email to the Head TA regarding the OOP Project.</p>
+                </div>
+                <div class="options">
+                    <div class="option">Task Completed🎉</div>
+                    <div class="option"><button>Delete</button></div>
+                </div>
+        
+            </div>
+
+            <div class="goal-box">
+                <div class="info">
+                    <div class="goal-name">
+                        Drink 10 glasses of water
+                    </div>
+                    <div class="due-time">
+                        Finished: Yesterday
+                    </div>
+                </div>
+                <div class="description">
+                    <p class="desc-text">Drink more water in order to be well hydrated.</p>
+                    
+                </div>
+                <div class="options">
+                    <div class="option">Task Completed🎉</div>
+                    <div class="option"><button>Delete</button></div>
+                </div>
+        
+            </div>
+
+            <div class="goal-box">
+                <div class="info">
+                    <div class="goal-name">
+                        Go to IKEA
+                    </div>
+                    <div class="due-time">
+                        Finished: 2 days ago
+                    </div>
+                </div>
+                <div class="description">
+                    <p class="desc-text">
+                        <ul class="desc-list">
+                            <li>office lamp</li>
+                            <li>bed sheets</li>
+                            <li>cutlery</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="options">
+                    <div class="option">Task Completed🎉</div>
+                    <div class="option"><button>Delete</button></div>
+                </div>
+            
+            </div>
+
+            <div class="goal-box">
+                <div class="info">
+                    <div class="goal-name">
+                        Save John and Sarah Connor
+                    </div>
+                    <div class="due-time">
+                        Finished: 1984
+                    </div>
+                </div>
+                <div class="description">
+                    <p class="desc-text">I'll be back.</p>
+                </div>
+                <div class="options">
+                    <div class="option">Task Completed🎉</div>
+                    <div class="option"><button>Delete</button></div>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; Frija & Purice SRL.</p>
+    </div>
+
+    <script>
+        let menu = document.getElementById("menu");
+
+        function toggleMenu(){
+            menu.classList.toggle("open");
+        }
+
+    </script>
+
+
+</body>
+</html>

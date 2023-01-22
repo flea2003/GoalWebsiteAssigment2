@@ -1,0 +1,138 @@
+body {
+    background-color: #F7F4D4;
+    font-family: 'Kanit', sans-serif;
+    color: #213409;
+    margin: 0px;
+}
+
+.inceput{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    background-color: #7FBD32;
+    border: solid #213409;
+    align-items: center;
+    height: 100px;
+  }
+
+footer {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    align-items: center;
+  }  
+
+
+button[type=submit]{
+    background-color: #F7F4D4;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5%;
+  }
+
+input[type=text]{
+    border-radius: 5%;
+    background-color: #F7F4D4;
+}
+
+
+input[type=password]{
+    border-radius: 5%;
+    background-color: #F7F4D4;
+}
+
+input[type=email]{
+    border-radius: 5%;
+    background-color: #F7F4D4;
+}
+
+button[type=list]{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5%;
+  }
+
+
+textarea{
+    background-color: rgb(133, 155, 213);
+}
+
+.tabele{
+    display: flex;
+    justify-content: space-around;
+    background-color: #7FBD32;
+    border: solid #213409;
+    flex-wrap: wrap;
+
+}
+
+.empty{
+    height: 110px;
+}
+
+.content{
+    display: flex;
+    padding: .7em;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.titlu{
+    font-size: 50px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.inceput{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.img{
+    position:relative; top:3px;
+}
+
+#nemo{
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+    margin:30px;
+    padding: 20px;
+    border-radius: 10%;
+    animation: fadeIn 3s;
+
+}
+
+.lol{
+    background-color: #7FBD32;
+    color: #F7F4D4;
+    border: solid #213409;
+    border-radius: 15%;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

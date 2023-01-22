@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="css_files\style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="target-2070972_1280.png">
+    <script defer src="qoutes.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    
+    <script>
+        function todayDate(){
+        var d = new Date();
+        var n = d.getFullYear() + "  ";
+        return document.getElementById("date").innerHTML = n;
+    }
+    </script>
+
+
+</head>
+
+<body onload=todayDate()>
+
+    <div class = "inceput">  
+        <div class="titlu">G</div>
+        <div class="titlu"><img src="target-2070972_1280.png" alt="" width="35" class="img"></div>
+        <div class="titlu">a</div>
+        <div class="titlu">l</div>
+        <div class="titlu"> </div>
+        <div class="titlu">S</div>
+        <div class="titlu">e</div>
+        <div class="titlu">t</div>
+        <div class="titlu">t</div>
+        <div class="titlu">e</div>
+        <div class="titlu">r</div>
+    </div>
+    
+    <div id="nemo">
+        
+    </div>
+
+    <center>
+    <button type="button" id="lol">New Random Quote</button>
+    </center>
+    <br>
+    
+
+    <div class="tabele">
+        <form action="" >
+            <ul class="nav">
+                <li>
+                    <h1>
+                        Sign In
+                    </h1>
+                </li>
+                <li>
+                    <div class="name content">
+                        <label for="Name">Your Email:</label>
+                        <input type="email" name = "name" style="width:260px"/> 
+                    </div>
+                </li>
+                <li>
+                    <div class="email content">
+                        <label for="">Your Password:</label><input type="password" name = "name_email" style="width:260px"> 
+                    </div>
+                </li>
+                <li>
+                <div class="button">
+                        <button type="submit">
+                            <div style="font-family: 'Courier New', monospace;"> Sign In </div>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </form>
+        <form action="" >
+            <ul class="nav">
+                <li>
+                    <h1>
+                        Sign Up
+                    </h1>
+                </li>
+                <li>
+                    <div class="name content">
+                        <label for="Name">Your Name:</label>
+                        <input type="text" name = "name" style="width:260px"/> 
+                    </div>
+                </li>
+                <li>
+                    <div class="email content">
+                        <label for="">Your Surname:</label><input type="text" name = "name_email" style="width:260px"> 
+                    </div>
+                </li>
+                <li>
+                    <div class="email content">
+                        <label for="">Your Email:</label><input type="email" name = "name_email" style="width:260px"> 
+                    </div>
+                </li>
+                <li>
+                    <div class="email content">
+                        <label for="">Your Password:</label><input type="password" name = "name_email" style="width:260px"> 
+                    </div>
+                </li>
+                <li>
+                    <div class="button">
+                        <button type="submit">
+                            <div style="font-family: 'Courier New', monospace;"> Sign Up </div>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </form>
+    </div>
+
+    <center>
+        <a href="home.html">Continue Without Loging</a>
+    </center>
+        
+
+
+    <label for="">Enter an item</label>
+    <input type="text" id="menu-item" />
+    <button id="btn" onclick="addNewItem()">submit</button>
+
+    <ul id="menu"></ul>
+
+    <div class="empty"> </div>
+    
+    
+
+    <footer>
+        &copy; <em id="date"></em>Victor Purice & Marius Frija
+    </footer>
+</body>
+</html>

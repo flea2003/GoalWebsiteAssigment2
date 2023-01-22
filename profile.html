@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="shortcut icon" type="image/x-icon" href="target-2070972_1280.png">
+    <link rel="stylesheet" href="css_files\home_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="home.html"><img src="css_files/unnamed.png" alt="" class="logo"></a>
+        <ul>
+            <li><a href="home.html">My Goals</a></li>
+            <li><a href="goal-history.html">My History</a></li>
+        </ul>
+        <img class="profile-pic" src="css_files\A._Schwarzenegger.jpg" alt="profile_picture" height="60px" width="48px" onclick="toggleMenu()">
+    </nav>
+
+    <div class="menu-wrap" id="menu">
+        <div class="menu">
+            <div class="user-info">
+                <ul>
+                <li><a href="profile.html" class="sub-menu-link">
+                    <img src="1250689.png" alt="" width="15px" height="15px">
+                    <p>Profile</p>
+                    
+                </a></li>
+                <li><a href="index.html" class="sub-menu-link">
+                    <img src="3596149.png" alt="" width="15px" height="15">
+                    <p>Log Out</p>
+                </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class = "blea">    
+        <ul class="nav1">
+            <li>Name: Arnold Schwarzenegger</li>
+            <li>Email: arnold@gmail.com</li>
+            <li>Task Completed This Year: 365</li>
+            <li>Profile Picture</li>
+            <li><img class="profile-pic" src="css_files\A._Schwarzenegger.jpg" alt="profile_picture" height= 300px" width="240px" onclick="toggleMenu()">
+            </li>
+            <li><button>Upload</button></li>
+
+        </ul>
+    </div>
+    
+    <script>
+        let menu = document.getElementById("menu");
+
+        function toggleMenu(){
+            menu.classList.toggle("open");
+        }
+
+        var data = 0;
+        function increment() {
+            data = data + 1;
+            document.getElementById("counting").innerText = data;}
+        function decrement() {
+            data = data -1;
+            document.getElementById("counting").innerText = data;
+        }
+
+    </script>
+    
+
+
+    <div class="footer">
+        <p>&copy; Frija & Purice SRL.</p>
+    </div>
+
+    
+</body>
+</html>
