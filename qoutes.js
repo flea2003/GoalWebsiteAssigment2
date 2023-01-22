@@ -1,6 +1,10 @@
-const button = document.getElementById("btn");
-button.addEventListener("click", addNewItem);
-      
+var timeStart;
+window.onload=init;
+function init(){
+  timeStart= new Date().getTime();
+}
+
+
 function addNewItem(evt) {
   let menu_item = document.getElementById("menu-item").value;
   let menu = document.getElementById("menu");
@@ -43,7 +47,7 @@ document.getElementById("lol").addEventListener("click", myFunction);
 myFunction();
 
 let buttonSignUp = document.getElementById("signup");
-buttonSignUp.addEventListener("click", functions);
+buttonSignUp.addEventListener("click",functions);
 
 let numberofclicks = 0;
 
@@ -60,7 +64,21 @@ function click(){
   document.getElementById("bruceli").appendChild(li);
 }
 
+function timeSpent(timeStart){
+  var end= new Date().getTime();
+  var timp = new Date(end - timeStart);
+  var m= timp.getMinutes();
+  var s=timp.getSeconds();
+  let li = document.createElement("li");
+  let text = document.createTextNode("Time spent: "+m+" minutes and "+s+" seconds");
+  li.appendChild(text);
+  document.getElementById("bruceli").appendChild(li); 
+}
+
+
 function functions(){
   document.getElementById("ascuns").style.display = "block";
   click();
+  timeSpent(timeStart);
+
 }
