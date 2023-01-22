@@ -93,12 +93,23 @@ function timeSpent(timeStart){
   
 }
 
+function typed(){
+  let sum = 0;
+  var arr = document.getElementsByClassName("inputt");
+  for(let i=0;i<arr.length;i++){
+    sum += arr[i].value.length;
+    console.log(arr[i].value);
+  }
+  var text = document.getElementById("characters");
+  text.innerHTML = "Number of characters typed: " + sum;
+}
+
 
 function functions(){
   document.getElementById("ascuns").style.display = "block";
   click();
   timeSpent(timeStart);
   press();
-
+  typed();
 
 }
