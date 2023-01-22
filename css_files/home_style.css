@@ -1,0 +1,248 @@
+body {
+    background-color: #F7F4D4;
+    color: #213409;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.top-bar {
+    background-color: #CBE432;
+    color: #213409;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+@media (max-width: 800px) {
+    .top_bar{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav li {
+    font-size: 24px;
+    margin-left: 10px;
+}
+.nav a{
+    text-decoration: none;
+}
+.nav a:hover {
+    color: blue;
+    transform: translate(5px);
+}
+
+.profile-pic {
+    border-radius: 35%;
+}
+
+#add-button {
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    right: 20px;
+
+    bottom:100px;
+}
+
+.goal {
+    font-size: px;
+    padding: 30px;
+    margin: 20px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #7FBD32;
+    text-align: center;          
+    
+}
+.inceput{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 36px;
+    color: #213409;
+}
+.content {
+    padding: 60px 45px;
+}
+.content-inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 45px;
+    grid-row-gap: 45px;
+
+}
+
+/* Stuff related to the goal boxes**/
+
+.goal-box {
+    border: solid #7FBD32;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    flex-wrap: wrap;
+    margin: 20px 20px;
+    
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-style: italic;
+    align-items: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-style: italic;
+}
+.desc-text {
+    opacity: 50%;
+}
+.desc-text:hover {
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
+.target {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    text-align: center;
+}
+button {
+background-color: #7FBD32;
+border: #33982a;
+}
+button:hover{
+    background-color: aquamarine;
+}
+#counting {
+    margin: 0 10px;
+    font-size: 10x;
+}
+.slider {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+.slider p {
+    font-size:16px;
+    font-weight:600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left:10px;
+    color:#33982a;
+}
+input.larger {
+    width: 30px;
+    height: 30px;
+}
+
+.desc-list {
+    opacity: 50%;
+}
+
+.desc-list:hover {
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
+
+
+nav, ul{
+    width: 100%;
+    text-align: left;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:10px 20px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #CBE432;
+}
+
+.logo{
+    margin-left:30px;
+}
+
+.profile-pic{
+    margin-right: 70px;
+}
+
+.menu-wrap{
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    width: 200px;
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height 0.5s;
+}
+
+.menu-wrap.open{
+    max-height: 300px;
+}
+
+.menu{
+    background-color:#CBE432;
+    margin: 10px;
+    border-radius: 30%;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+}
+
+.sub-menu-link{
+    display: flex;
+    align-items:center;
+
+}
+
+.profile-pic{
+    padding: 2px;
+    border:solid #213409;
+}
+
+
