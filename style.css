@@ -125,7 +125,7 @@ textarea{
 
 }
 
-.lol{
+#lol{
     background-color: #7FBD32;
     color: #F7F4D4;
     border: solid #213409;
@@ -136,3 +136,7 @@ textarea{
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
+
+.hidden{
+    display: none;
+}
