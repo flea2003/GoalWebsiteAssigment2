@@ -47,6 +47,22 @@ input[type=text]{
     background-color: #F7F4D4;
 }
 
+input[list=seks]{
+    border-radius: 5%;
+    background-color: #F7F4D4;
+}
+.inputt{
+    border-radius: 5%;
+    background-color: #F7F4D4;
+}
+input[list=browsers]{
+    border-radius: 5%;
+    background-color: #F7F4D4;
+}
+#language{
+    border-radius: 5%;
+    background-color: #F7F4D4;
+}
 
 input[type=password]{
     border-radius: 5%;

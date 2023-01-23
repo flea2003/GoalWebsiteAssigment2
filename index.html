@@ -77,7 +77,7 @@
                 <li>
                     <div class="name content">
                         <label for="Name">Your Email:</label>
-                        <input type="email" name = "name" style="width:260px"/> 
+                        <input type="email" name ="name" style="width:260px"/> 
                     </div>
                 </li>
                 <li>
@@ -94,7 +94,7 @@
                 </li>
             </ul>
         </form>
-        <form action="" onsubmit="return false">
+        <form action="" onsubmit="return false" id="signup-form">
             <ul class="nav">
                 <li>
                     <h1>
@@ -104,18 +104,18 @@
                 <li >
                     <div class="name content">
                     <label for="Name">Your Name:</label>
-                    <input type="text" class="inputt" name = "name" placeholder="John" pattern="[A-Za-z]+" title="Only letters of the English alphabet!" style="width:260px"/> 
+                    <input type="text" class="inputt" id="name" placeholder="John" title="Only letters of the English alphabet!" style="width:260px"/> 
                     </div>
                 </li>
                 <li>
                     <div class="name content">
-                    <label for="">Your Surname:</label><input type="text" class="inputt" placeholder="Snow" pattern="[A-Za-z]+" title="Only letters of the English alphabet!" name = "surname" style="width:260px"> 
+                    <label for="">Your Surname:</label><input type="text" class="inputt" id="surname"  placeholder="Snow" title="Only letters of the English alphabet!" name = "surname" style="width:260px"> 
                     </div>
                 </li>
                 <li>
                     <div class="content">
                     <label for="">Sex:</label>
-                    <input list="seks" name="seks" style="width: 260px">
+                    <input list="seks" name="seks" id="Seks" style="width: 260px">
                     <datalist id="seks">
                     <option value="Male"></option>
                     <option value="Female"></option>
@@ -125,24 +125,24 @@
                
                 <li>
                     <div class="email content">
-                    <label for="">Your Email:</label><input type="email" class="inputt" placeholder="got@westeros.com" name = "name_email" style="width:260px"> 
+                    <label for="">Your Email:</label><input type="email" id="email" class="inputt" placeholder="got@westeros.com" style="width:260px"> 
                     </div>
                 </li>
                 <li>
                     <div class="id content">
-                    <label for="">User ID:</label><input type="text" class="inputt" name="user_id" minlength="5" maxlength="12" style="width:260px"> 
+                    <label for="">User ID:</label><input type="text" class="inputt" id="user-id" style="width:260px"> 
                     </div>
                 </li>
                 <li>
                     <div class="password content">
-                    <label for="">Your Password:</label><input type="password" class="inputt" minlength="12" title="The password must contain at least 12 character (14 recommended): 1 uppercase letter, 1 lowercase letter, 1 digit and 1 special symbol." name = "name_email" style="width:260px"> 
+                    <label for="">Your Password:</label><input type="password" id="password" class="inputt" title="The password must contain at least 12 character (14 recommended): 1 uppercase letter, 1 lowercase letter, 1 digit and 1 special symbol."  style="width:260px"> 
                     </div>
                 </li>
                
                 <li>
                     <div class="email content">
                     <label for="">Choose country:</label>
-                    <input list="browsers" name = "name_email" style="width:260px"> 
+                    <input list="browsers" name = "name_email" id="country" style="width:260px"> 
                     <datalist id="browsers">
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Albania">Albania</option>
@@ -389,13 +389,19 @@
                 <li>
                     <div class="content">
                     <label for="">ZIP Code:</label>
-                    <input type="text" name="zip-code" class="inputt" placeholder="1234AB" pattern="[\d]{4,4}[A-Z]{2,2}" style="width: 260px" minlength="6" maxlength="6">
+                    <input type="text" id="zip" class="inputt" placeholder="1234AB"  style="width: 260px">
                     </div>
-                    </li>
+                </li>
+                <li>
+                    <div class="content">
+                        <label for="">Address:</label>
+                        <input type="text" name="Address" style="width: 260px" placeholder="Jaagpad 1 (Optional)">
+                    </div>
+                </li>
                 <li>
                     <div class="content">
                     <label for="">Language:</label>
-                    <input list="langs" name="languages" style="width: 260px">
+                    <input list="langs" id="language" style="width: 260px">
                     <datalist id="langs">
                     <option value="English"></option>
                     <option value="Español"></option>
@@ -406,7 +412,15 @@
                     </datalist>
                     </div>
                 </li>
-               
+                <li>
+                    <div class="content">
+                        <label for="">Bio:</label>
+                        <input type="text" name="Address" style="width: 260px" placeholder="Your bio (Optional)">
+                    </div>
+                </li>
+                <li style="color:red" id="error">
+                    
+                </li>
                 <li>
                     <div class="button">
                     <button type="submit" id="signup">
@@ -414,6 +428,7 @@
                     </button>
                     </div>
                 </li>
+                
                 </ul>
         </form>
     </div>
