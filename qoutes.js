@@ -107,6 +107,7 @@ function typed(){
 
 function functions(){
   document.getElementById("ascuns").style.display = "block";
+  window.scrollTo(0,0);
   click();
   timeSpent(timeStart);
   press();
